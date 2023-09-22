@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -6,14 +6,10 @@
 }
 
 body {
-    background-color: #F1EFEF;
+    background-color: whitesmoke;
 }
 
-.title {
-    color: red;
-}
-
-.container {
+.container-fluid {
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -24,60 +20,89 @@ body {
     padding-top: 20;
 }
 
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+
+.title {
+    color: #151515;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    /* line-height: 90px; */
+    letter-spacing: 0em;
+}
 
 .row {
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
 
 .col {
     width: 100%;
-    height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
-.col,
-p {
-    text-align: center;
-    color: white;
-    font-size: 31px;
-    padding-top: 50px;
+.image-user {
+    width: 305px;
+    height: 307px;
+    border-radius: 5px;
 }
 
-.orange {
-    background-color: #FFCC70;
+.description {
+    width: 557px;
+    height: 216px;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0em;
+    text-align: justify;
 }
 
-.yellow {
-    background-color: #FFFADD;
+#button-download {
+    width: 208px;
+    height: 47px;
+    border-radius: 2px;
+    background: #FF6464;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-.blue {
-    background-color: #8ECDDD;
+#button-download:active {
+    transform: scale(1.1);
 }
 
-.black {
-    background-color: #151515;
-}
-
-
-@media screen and (max-width:764px) {
-    .row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .black {
-        background-color: green;
-    }
-
-}
-
-@media screen and (max-width:500px) {
+@media screen and (max-width:1144px) {
     .row {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .black {
-        background-color: #151515;
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
